@@ -18,9 +18,24 @@ The scanner reads metadata without requesting cloud-content downloads. OneDrive,
 
 Click a map area to select its folder or file in the sidebar. Double-click a folder to explore it, or use the folder tree and breadcrumbs. Categories highlight file types. **Rescan** clears the old view and builds a fresh map. A cached overview shows its scan date.
 
+## Preview, open and recoverable deletion (0.1.7)
+
+Select a file and use **Quick Look** (⌘Y) or **Open** (⌘O). Cloud-only files ask
+before a preview or open can download their contents. Use **Move to Trash** (⌘⌫)
+for a selected file or folder. The app confirms the item and refreshes the map
+afterwards. The scan root cannot be trashed. Local items can be recovered with
+Finder’s Trash → Put Back. A synced deletion may also remove the item from
+OneDrive, SharePoint or another cloud service and other devices. This does not
+just remove a local downloaded copy. There is no permanent-delete fallback.
+
+These features belong to the 0.1.7 candidate; the App Store release remains pending.
+
 ## Privacy and permissions
 
-Scans run locally. The app has no account, advertising, analytics or network-upload feature. It does not delete files. Folder access is read-only and granted through the macOS picker.
+Scans run locally. The app has no account, advertising, analytics or network-upload feature. Scans never modify files. Version 0.1.7 adds explicit file preview and Move to Trash.
+The Store sandbox permits read/write access to user-selected folders; scans use
+read-only bookmarks, and Trash asks for the containing folder. No writable
+bookmark is saved.
 
 Read the [privacy policy](PRIVACY.md) and [original MIT notice](LICENSE.upstream).
 
