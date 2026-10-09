@@ -17,8 +17,9 @@ a cloud-only file asks before its contents can be downloaded.
 The Store sandbox permits read/write access to folders selected through the macOS
 picker. Move to Trash is an explicit, confirmed action and requests the containing
 folder. The app does not save writable bookmarks or automatically delete files.
-There is no permanent-delete fallback. Local items can be restored using Finder’s
-Trash → Put Back. Trashing an item in a synced folder may also sync deletion to
+There is no permanent-delete fallback. Local items can be restored by moving them from Finder’s
+Trash back to their original folder. Put Back may be unavailable in sandboxed
+builds. Trashing an item in a synced folder may also sync deletion to
 the cloud and other devices; it is not local-copy eviction.
 
 To remove local cached scans or saved folder permissions, remove the app’s local data through macOS or contact support for guidance. Removing app data does not remove your scanned files.

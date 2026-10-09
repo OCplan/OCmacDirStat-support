@@ -23,8 +23,9 @@ Click a map area to select its folder or file in the sidebar. Double-click a fol
 Select a file and use **Quick Look** (⌘Y) or **Open** (⌘O). Cloud-only files ask
 before a preview or open can download their contents. Use **Move to Trash** (⌘⌫)
 for a selected file or folder. The app confirms the item and refreshes the map
-afterwards. The scan root cannot be trashed. Local items can be recovered with
-Finder’s Trash → Put Back. A synced deletion may also remove the item from
+afterwards. The scan root cannot be trashed. Local items can be recovered by moving them from
+Finder’s Trash back to their original folder. Put Back may be unavailable in
+sandboxed builds. A synced deletion may also remove the item from
 OneDrive, SharePoint or another cloud service and other devices. This does not
 just remove a local downloaded copy. There is no permanent-delete fallback.
 
